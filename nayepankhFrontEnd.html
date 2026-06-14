@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NayePankh Foundation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+    transition:0.4s;
+}
+
+.dark-mode{
+    background:#121212;
+    color:#fff;
+}
+
+header{
+    background:#0077b6;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.toggle-btn{
+    background:white;
+    color:#0077b6;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url("nayepankh.avif");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    animation:slideDown 1s ease;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:1.2rem;
+}
+
+.btn{
+    margin-top:20px;
+    background:#ffb703;
+    color:black;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.about p{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.dark-mode .card{
+    background:#1e1e1e;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.volunteer{
+    text-align:center;
+    background:#e9f5ff;
+}
+
+.dark-mode .volunteer{
+    background:#222;
+}
+
+.contact form{
+    max-width:500px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#0077b6;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+@keyframes slideDown{
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.fade{
+    animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+}
+ul{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>NayePankh Foundation</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="toggle-btn" onclick="toggleDarkMode()">
+        Dark Mode
+    </button>
+</header>
+
+<section class="hero" id="home">
+    <h1>Giving Wings to Dreams</h1>
+    <p>Empowering lives through education, support and opportunities.</p>
+    <a href="#about" class="btn">Learn More</a>
+</section>
+
+<section class="about fade" id="about">
+    <h2>About Us</h2>
+    <p>
+        The NayePankh Foundation is a registered, youth-led non-governmental organization (NGO) based in Uttar Pradesh, India. It focuses on uplifting underprivileged communities by providing education, food distribution, sanitary products, and clothing. It is also known for offering extensive virtual internship programs.<br></p>
+        <p><b>Core Initiatives & Focus Areas:</b>
+        <ul><li>Education & Child Welfare: Supports underprivileged children with school supplies, uniforms, and fundamental educational support.</li>
+           <li>>Hygiene & Women Empowerment: Conducts menstrual hygiene awareness campaigns and distributes sanitary pads.</li>
+                <li>Hunger Relief: Provides food to underprivileged families and stray animals.</li></ul>
+    </p>
+</section>
+
+<section id="programs">
+    <h2>Our Programs</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Education Support</h3>
+            <p>Providing learning resources and mentorship to children.</p>
+        </div>
+
+        <div class="card">
+            <h3>Skill Development</h3>
+            <p>Training youth with practical and professional skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>Community Welfare</h3>
+            <p>Organizing awareness campaigns and social initiatives.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="volunteer fade" id="volunteer">
+    <h2>Become a Volunteer</h2>
+    <p>Join us in making a positive impact in society.</p>
+    <br>
+    <button onclick="volunteerMsg()">
+        Join Now
+    </button>
+</section>
+
+<section class="contact fade" id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 NayePankh Foundation | Empowering Every Dream</p>
+</footer>
+
+<script>
+function toggleDarkMode(){
+    document.body.classList.toggle("dark-mode");
+}
+
+function volunteerMsg(){
+    alert("Thank you for showing interest in volunteering with NayePankh Foundation!");
+}
+</script>
+
+</body>
+</html>
