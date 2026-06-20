@@ -1,7 +1,6 @@
 # NayePankh-foundation
 NayePankh Foundation Website is a responsive and modern web platform designed to showcase the foundation's mission, programs, and community impact. Built with HTML, CSS, and JavaScript, it features interactive sections, smooth animations, dark mode support, and a user-friendly design to engage visitors and volunteers.
 
-Readme:
 # NayePankh Foundation Webpage
 
 A responsive and modern website developed for NayePankh Foundation, a youth-led NGO dedicated to empowering underprivileged communities through education, women empowerment, hygiene awareness, and hunger relief initiatives.
